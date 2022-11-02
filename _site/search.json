@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tingxi Long",
+    "section": "",
+    "text": "Hi! This is a Tingxi (Tina) Long from China. I’m a first-year graduate student at Johns Hopkins University Department of Biostatistics.\nI enjoy studying biostatistics and performing data analysis for biomedical questions. I also love playing Overwatch, cooking and traveling in my spare time."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a first-year Biostatistics master student at Johns Hopkins Bloomber School of Public health.I have a particular interest in the statistical application in drug development and assessment. My goal is to become a biostatistician or data scientist in pharma companies to solve real-world problems such as analyzing clinical trials, real-world studies, etc. I’m also very interested in becoming a developer myself and I hope I can develop open-source packages for biomedical data analysis.\nI attended a Sino-US joint University of Duke University and Wuhan University in China and received my dual-degree of B.S. in Global Health.\nFun fact: I’m also the first undergraduate class of Duke Kunshan University and the first class to graduate from this brand-new University. Very proud to be the very first builder of a University!"
+  },
+  {
+    "objectID": "data_analysis.html",
+    "href": "data_analysis.html",
+    "title": "Data analysis",
+    "section": "",
+    "text": "1+1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html#play-hard",
+    "href": "about.html#play-hard",
+    "title": "About",
+    "section": "Play Hard",
+    "text": "Play Hard\nI’m a player of the game “Overwatch” and a fan of Overwatch League."
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "About",
+    "section": "Publications",
+    "text": "Publications\n\nLong, T., Zhang K, Chen Y, Wu C. Trends in Diet Quality Among Older US Adults From 2001 to 2018. JAMA Netw Open.2022 Mar 1;5(3):e221880.\nJin X, Long, T., Chen H, Zeng Y, Zhang X, Yan L, Wu C. Associations of Alcohol Dehydrogenase and Aldehyde Dehydrogenase Polymorphism With Cognitive Impairment Among the Oldest-Old in China. Front Aging Neurosci. 2022 Feb 25;13:710966.\nJin,X.,Long,T.,Chen,H.,Zeng,Y.andYan,L.(2020),The Association Between Aldehyde Dehydrogenase Gene Polymorphism and Cognitive Impairment among Chinese Oldest Old. Alzheimer’s Dement., 16:e044334."
+  },
+  {
+    "objectID": "about.html#what-i-do-for-fun",
+    "href": "about.html#what-i-do-for-fun",
+    "title": "About",
+    "section": "What I do for fun",
+    "text": "What I do for fun\n\nIn my spare time, I enjoy cooking Chinese food, especially spicy Szechuan food.\nI am also an overwatche play and I enjoy watching Overwatch League(a Blizzard FPS game) battles.\nI also enjoy traveling both in the cities and in the nature."
+  },
+  {
+    "objectID": "about.html#fun-facts-about-me",
+    "href": "about.html#fun-facts-about-me",
+    "title": "About",
+    "section": "Fun facts about me",
+    "text": "Fun facts about me\n\nIn my spare time, I enjoy cooking Chinese food, especially spicy Szechuan food.\nI am also an overwatche play and I enjoy watching Overwatch League(a Blizzard FPS game) battles.\nI also enjoy traveling both in the cities and in the nature.\nI have a 4-year old corgi named “Mendun”. This word means stupid and cute in Chinese."
+  }
+]

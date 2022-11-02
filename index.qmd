@@ -1,0 +1,11 @@
+---
+title: "Tingxi Long"
+image: images/Tina at OWL battle.jpeg
+about:
+  template: jolla
+---
+
+Hi! This is a Tingxi (Tina) Long from China. I'm a first-year graduate student at Johns Hopkins University Department of Biostatistics.
+
+I enjoy studying biostatistics and performing data analysis for biomedical questions. I also love playing Overwatch, cooking and traveling in my spare time.
+
