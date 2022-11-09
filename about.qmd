@@ -1,12 +1,16 @@
 ---
 title: "About"
+format: 
+  html:
+    fig-width: 8
+    fig-height: 6
 ---
 
 ## Academics & Research
 
 -   I'm a first-year Biostatistics master student at Johns Hopkins Bloomber School of Public health.I have a particular interest in the statistical application in drug development and assessment. My goal is to become a biostatistician or data scientist in pharma companies to solve real-world problems such as analyzing clinical trials, real-world studies, etc. I'm also very interested in becoming a developer myself and I hope I can develop open-source packages for biomedical data analysis.
 
--   I attended a Sino-US joint University of Duke University and Wuhan University in China and received my dual-degree of B.S. in Global Health. 
+-   I attended a Sino-US joint University of Duke University and Wuhan University in China and received my dual-degree of B.S. in Global Health.
 
 -   Fun fact: I'm also the first undergraduate class of Duke Kunshan University and the first class to graduate from this brand-new University. Very proud to be the very first builder of a University!
 
@@ -20,9 +24,7 @@ title: "About"
 
 ## Fun facts about me
 
--   In my spare time, I enjoy cooking Chinese food, especially spicy Szechuan food. 
--   I am also an overwatche play and I enjoy watching Overwatch League(a Blizzard FPS game) battles. 
+-   In my spare time, I enjoy cooking Chinese food, especially spicy Szechuan food.
+-   I am also an overwatche play and I enjoy watching Overwatch League(a Blizzard FPS game) battles.
 -   I also enjoy traveling both in the cities and in the nature.
--   I have a 4-year old corgi named "Mendun". This word means stupid and cute in Chinese.
-![Picture of Mendun](images/Mendun.jpeg)
-
+-   I have a 4-year old corgi named "Mendun". This word means stupid and cute in Chinese. ![Picture of Mendun](images/Mendun.jpeg)
