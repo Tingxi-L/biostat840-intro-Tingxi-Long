@@ -82,7 +82,7 @@ tuition_cost <- readRDS(here("data","tuesdata_cost.RDS"))
 
 -   Here is a list of full [data dictionary](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-03-10/readme.md#data-dictionary) for what all the column names mean. The data dictionary for this example analysis is also shown below.
 
-### **historical_tuition.csv** [@tuitioncost]
+### **historical_tuition.csv**
 
 | variable     | class     | description                                                                                                                                     |
 |:--------------------------|:--------------------|:------------------------|
