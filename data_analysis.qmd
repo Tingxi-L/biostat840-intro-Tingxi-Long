@@ -4,6 +4,7 @@ format:
   html:
     fig-width: 8
     fig-height: 6
+bibliography: my-refs.bib
 ---
 
 **Example analysis on tuition cost for college student in the United States**
@@ -12,7 +13,7 @@ format:
 
 ## Introduction
 
-In this part, I will perform an example data analysis with R. 
+In this part, I will perform an example data analysis with R with [@tidytuesday; @tuitioncost; @historical]. 
 
 Objective: 
 
@@ -25,7 +26,7 @@ Intended audience:
 -   High school and college students
 -   Parents and teachers are also potential audiences.
 
-Link to original data:The two datasets for this part of the assignment comes from [TidyTuesday](https://www.tidytuesday.com).
+Link to original data:The two datasets for this part of the assignment comes from  [TidyTuesday](https://www.tidytuesday.com).
 
 ::: callout-note
 This example analysis will only use two out of five datasets from the original tidytuesday data. More information about the diversity, salary, income related to US collges can be found in other datasets.
@@ -36,6 +37,7 @@ This example analysis will only use two out of five datasets from the original t
 Specifically, we will use the following data from March 2020.
 
 ```{r}
+#| message: false
 library(dplyr)
 library(tidyverse)
 library(ggplot2)
@@ -43,7 +45,9 @@ library(lubridate)
 library(here)
 ```
 
-```{r, eval=FALSE}
+```{r}
+#| echo: false
+#| eval: false
 tuesdata <- tidytuesdayR::tt_load('2020-03-10')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 11)
 tuition_cost <- tuesdata$tuition_cost
@@ -78,7 +82,7 @@ tuition_cost <- readRDS(here("data","tuesdata_cost.RDS"))
 
 -   Here is a list of full [data dictionary](https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-03-10/readme.md#data-dictionary) for what all the column names mean. The data dictionary for this example analysis is also shown below.
 
-### **historical_tuition.csv**
+### **historical_tuition.csv** [@tuitioncost]
 
 | variable     | class     | description                                                                                                                                     |
 |:--------------------------|:--------------------|:------------------------|
@@ -113,17 +117,22 @@ Using the `hist_tution` data, find the 4-year constant tuition cost for private,
 hist_tuition$in_year <- as.Date(as.character(substr(hist_tuition$year, 1, 4)), format = "%Y")
 # 2.  Plot the trend 
 ggplot(data=hist_tuition, aes(x=in_year, y = tuition_cost)) + 
-  geom_point(aes(colour = type))+facet_wrap(.~tuition_type,nrow = 3)+
+  geom_line(aes(colour = type))+facet_wrap(.~tuition_type,nrow = 3)+
   labs(title ="Changes in tuition cost for different types of universities from 1985", 
-       subtitle = "An increasing trend is observed among public and private instituions", caption = "Tingxi Long")+
+       subtitle = "An increasing trend is observed among public and private instituions", caption = "Tingxi Long")+geom_point(aes(colour=type))+
   theme_classic()+theme(strip.background =element_rect(fill="azure2"))+
   scale_x_date(date_breaks = "5 years", date_minor_breaks = "2 years")+
   theme(axis.text.x = element_text(angle = -30, vjust = 0.5, hjust=0))+ylab("Cost of tuition (US dollor)")+xlab("Year")
 ```
 
+
 ### Which State has the highest average tuition cost?
 
 In this part, I will use `tuition_cost` to explore the tuition by university and by state in the US.
+
+::: callout-note
+We use the column `out_of_state_tuition` because if an institution charges in-state and out-of-state residents the same rate, the amount is repeated in the "Out-of-state" columns.
+:::
 
 ```{r}
 # Only include 4-year programs.
@@ -148,7 +157,7 @@ ggplot(head(type_4c,20), aes(fill=type,x= ave_outstate, y =fct_reorder(.f=state_
 
 When only 4-year programs were included, the top 3 most expensive State is Rhode Island, Connecticut and Massachusetts, with average out of state cost exceeding 40,000 dollars per year. 19 out of 20 in the most expensive average out of state tuitions are from private institutions.
 
-### The top 10 most expensive universities in Maryland.
+### The most expensive universities in Maryland.
 
 ```{r}
 # Filter only universities in Maryland
@@ -167,7 +176,9 @@ is Johns Hopkins University", caption = "Tingxi Long")+ ylab("University")+xlab(
 
 ## Summary:
 
-8 colleges in Maryland has an out of state tuition higher than the average out of state tuition in Rhode Island. 
+The past 20 years have seen an increasing trend in tuition cost for both private and public colleges and universities.By the 2016, the tuition cost for 4-year program in private universities is almost twice the price of the tuition cost in public universities. When only 4-year programs were included, the top 3 most expensive State for college is Rhode Island, Connecticut and Massachusetts, with average out of state cost exceeding 40,000 dollars per year with 42260.250 per year for Rhode Island. 19 out of 20 in the most expensive average out of state tuition are from private institutions.
+
+The most expensive college in Maryland is Johns Hopkins University. 8 colleges in Maryland has an out of state tuition higher than the average out of state tuition in Rhode Island. 
 
 ``` {.r filename="Functions used in dplyr and tidyr and ggplot"}
 tidyr::
@@ -183,5 +194,5 @@ ggplot:
   geom_vline
 ```
 
--   Your analysis must include a `.bib` file, which you use to reference at least three unique citations. For example, it could be to a website or paper from where the original data came from or it could be to a paper describing a method you are using to analyze the data.
+
 

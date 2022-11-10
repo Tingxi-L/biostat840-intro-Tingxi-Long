@@ -22,3 +22,5 @@ editor: visual
 
 execute: 
   freeze: auto
+
+bibliography: my-refs.bib
