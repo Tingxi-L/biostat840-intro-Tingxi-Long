@@ -1,1 +1,1 @@
-Sitemap: https://github.com/Tingxi-L/biostat840-intro-Tingxi-Long/sitemap.xml
+Sitemap: https://Tingxi-L.github.io/biostat840-intro-Tingxi-Long/sitemap.xml
